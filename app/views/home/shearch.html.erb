@@ -1,0 +1,10 @@
+<h1>Your result</h1>
+<%= form_tag do %>
+
+ if <=% @movie %>
+  <%= label_tag 'movie', 'movie title' %>
+  <%= text_area_tag 'movie' %>
+
+  <p> <%= link_to("Search", movies_search_path) %></p>
+
+<% end %>

@@ -1,0 +1,9 @@
+<h1>Search a movie</h1>
+<%= form_tag do %>
+
+  <%= label_tag 'movie', 'movie title' %>
+  <%= text_area_tag 'movie' %>
+
+  <p> <%= link_to("Search", movies_search_path) %></p>
+
+<% end %>
